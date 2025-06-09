@@ -88,4 +88,102 @@ Azure é compatível com **Linux, Windows, Kubernetes, Docker**, e suporta lingu
 Adotar a **nuvem Azure** não é apenas uma questão de modernização, mas uma **estratégia competitiva** para empresas que desejam crescer com segurança, agilidade e inovação.
 
 > 💡 *“A nuvem não é mais o futuro. É o presente. E a Azure é uma das pontes mais sólidas para essa transformação.”*
+>
+> # ☁️ Modelos de Serviço em Nuvem na Azure: IaaS, PaaS e SaaS
+
+A **Microsoft Azure** oferece diferentes modelos de serviços em nuvem para atender diversas necessidades de negócios e projetos de TI: **IaaS, PaaS e SaaS**. Cada modelo tem seu nível de abstração, controle e responsabilidade, e entender essas diferenças é essencial para tomar decisões estratégicas em arquitetura de soluções.
+
+---
+
+## 🏗️ IaaS – Infrastructure as a Service (Infraestrutura como Serviço)
+
+### 🔍 O que é?
+O modelo IaaS oferece **infraestrutura virtualizada sob demanda**, como servidores, redes, armazenamento e sistemas operacionais. O usuário gerencia os recursos como se estivesse em um data center tradicional, mas sem o custo de manutenção física.
+
+### ✅ Responsabilidades:
+- **Azure:** gerencia a camada física, rede, virtualização e o host.
+- **Cliente:** gerencia o sistema operacional, middleware, dados, aplicações e segurança interna.
+
+### 💡 Casos de uso:
+- Hospedagem de **máquinas virtuais (VMs)**;
+- Ambientes de desenvolvimento e teste;
+- Migração lift-and-shift de sistemas legados;
+- Ambientes altamente customizáveis.
+
+### 📌 Exemplo na Azure:
+- **Azure Virtual Machines**
+- **Azure Virtual Network**
+- **Azure Storage**
+
+---
+
+## 🧱 PaaS – Platform as a Service (Plataforma como Serviço)
+
+### 🔍 O que é?
+No modelo PaaS, a Azure fornece a **infraestrutura + sistema operacional + ambiente de desenvolvimento**, permitindo que o desenvolvedor foque apenas na **aplicação e nos dados**.
+
+### ✅ Responsabilidades:
+- **Azure:** gerencia desde a infraestrutura até o middleware.
+- **Cliente:** gerencia apenas a aplicação e os dados.
+
+### 💡 Casos de uso:
+- Desenvolvimento ágil de aplicações web e mobile;
+- Automatização de processos com APIs e microsserviços;
+- Integração com CI/CD e DevOps;
+- Redução de tempo de deploy e manutenção.
+
+### 📌 Exemplo na Azure:
+- **Azure App Service**
+- **Azure Functions**
+- **Azure SQL Database**
+- **Azure Kubernetes Service (AKS)** (em modelos gerenciados)
+
+---
+
+## 🧑‍💼 SaaS – Software as a Service (Software como Serviço)
+
+### 🔍 O que é?
+No modelo SaaS, todo o serviço é entregue pronto pela Azure ou parceiros, e o usuário apenas consome a aplicação. É o modelo com **menos responsabilidade técnica para o cliente**.
+
+### ✅ Responsabilidades:
+- **Azure (ou o provedor):** gerencia tudo.
+- **Cliente:** apenas usa o serviço, gerencia usuários e configurações básicas.
+
+### 💡 Casos de uso:
+- Escritório digital e colaboração em equipe;
+- Gestão empresarial com ERP e CRM;
+- Ferramentas de BI e produtividade.
+
+### 📌 Exemplo na Azure:
+- **Microsoft 365** (Exchange, Teams, OneDrive, etc.)
+- **Power BI**
+- **Dynamics 365**
+
+---
+
+## 🔐 Modelo de Responsabilidade Compartilhada
+
+A **segurança na nuvem é uma responsabilidade compartilhada** entre a Azure e o cliente. A divisão depende do modelo de serviço:
+
+| Elemento                         | IaaS        | PaaS        | SaaS        |
+|----------------------------------|-------------|-------------|-------------|
+| Físico, rede, virtualização      | Azure       | Azure       | Azure       |
+| Sistema operacional              | Cliente     | Azure       | Azure       |
+| Aplicação                        | Cliente     | Cliente     | Azure       |
+| Dados                            | Cliente     | Cliente     | Cliente     |
+| Identidade & Acesso              | Cliente     | Cliente     | Cliente     |
+
+### 🔐 Exemplos de responsabilidade do cliente:
+- Gerenciar **identidades** com Azure Active Directory;
+- Definir **permissões e políticas**;
+- Aplicar **backup e criptografia** dos dados.
+
+---
+
+## ✅ Conclusão
+
+Ao escolher entre IaaS, PaaS ou SaaS na Azure, o profissional de TI precisa considerar o nível de controle necessário, a complexidade da aplicação e o tempo disponível para gestão. Entender o **modelo de responsabilidade compartilhada** garante a segurança e o bom uso da nuvem.
+
+> 💡 *"A decisão correta entre IaaS, PaaS ou SaaS não depende apenas da tecnologia, mas do objetivo do seu projeto."*
+
 
